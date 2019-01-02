@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <title>Homework</title>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1>Doggobase</h1>
+
+  <h2>Dog Submission</h2>
+
+  <div class="form">
+    <form id="new-dog-form">
+      <div class="form-item">
+        <label for="name" class="primary">Name:<br></label>
+        <input type="text" id="name" required/>
+      </div>
+
+      <div class="form-item" id="sex-form" hidden>
+        <label for="sex" class="primary">Sex:<br></label>
+        <select id="sex">
+          <option value="" disabled selected></option>
+          <option value="boy">Male</option>
+          <option value="girl">Female</option>
+        </select>
+      </div>
+
+      <div class="form-item" id="breed-form" hidden>
+        <label for="breed" class="primary">Breed:<br></label>
+        <input type="text" id="breed" required/>
+      </div>
+
+      <div class="form-item" id="goodness-form" hidden>
+        <p id="dog-goodness">Is phold a good phold?</p>
+        <input type="radio" name="goodness" value="Good" required>
+        <label for="good" id="good-dog">Good phold</label>
+        <input type="radio" name="goodness" value="Bad">
+        <label for="bad" id="bad-dog">Bad phold</label>
+      </div>
+
+
+      <input type="submit" value="Save entry" id="submit-dog" hidden/>
+    </form>
+  </div>
+
+  <h2>Dog Index</h2>
+  <button id="delete-all" type="button">Delete all</button>
+  <div id="dog-list"></div>
+</body>
+</html>
